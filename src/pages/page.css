@@ -1,0 +1,273 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    font-weight: 500;
+    color: rgb(0, 102, 204);
+    font-size: 1.2rem;
+    padding: 1%;
+    border-style: none;
+    background-color: inherit;
+}
+button:hover{
+    text-decoration: underline;
+}
+.nav-content {
+    position: fixed;
+    display: flex;
+    height: 5vh;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 99999;
+}
+.nav-content a {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-content a:hover,.nav-icon:hover,.search-icon:hover{
+    opacity: 0.5;
+}
+.nav-links {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav-icon{
+    display: none;
+    grid-gap:5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+svg{
+    width: 1rem;
+    height: 1rem; 
+}
+[class^="bar-"] {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.bar-one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+.bar-two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+@media only screen and (max-width: 600px) {
+.nav-content{
+    display: none;
+}
+}
+
+
+a{
+    text-decoration: none;
+}
+section{
+    width:100%;
+    height:80vh;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.one{
+    background-color: black;
+}
+.one p:nth-child(1){
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    padding-top:5% ;
+}
+.one p:nth-child(2){
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+.two p:nth-child(1){
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 3%;
+}
+.two p:nth-child(2){
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.two p:nth-child(3){
+    font-size:1.2rem;
+    font-weight: 500;
+    color:#86868B;
+}
+.three img{
+    padding-top: 5%;
+}
+.three p:nth-child(2){
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.homegrid{
+    padding-top:1% ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
+    text-align: center;
+    
+}
+.homegrid img{
+    padding-top: 7%;
+}
+.homegrid a{
+    height: 60vh;
+}
+.homegrid p{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.homegrid h6{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+}
+.homegrid button{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.homegrid a:nth-child(2){
+    color: black;
+}
+.homegrid a:nth-child(4) p{ 
+    color:white;
+}
+.homegrid a:nth-child(4) h6{
+    padding-top: 7%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.homegrid a:nth-child(5) h6{
+    padding-top: 2%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.footer{
+    background-color: #F5F5F7;
+    width: 100%;
+    text-align: center;
+}
+.footer p{
+    font-size: 0.9rem;
+    color:#bbb
+}
+@media only screen and (max-width:600px) {
+    section{
+        height: 65vh;
+    } 
+    Button{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .one p:nth-child(1){
+        font-size: 2rem;
+        padding-top: 20%;
+    }   
+    .one p:nth-child(2){
+        font-size: 1.2rem;
+    }
+    .two p:nth-child(1){
+        font-size: 2rem;
+        padding-top: 15%;
+    }
+    .two p:nth-child(2){
+        font-size:1.2rem;
+    }
+    .two p:nth-child(3){
+        font-size: 1rem;
+    }
+    .three img{
+        padding-top: 15%;
+    }
+    .three p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .homegrid{
+        display: flex;
+        flex-direction: column;
+    }
+    .homegrid a:nth-child(4) h6{
+        padding-top:15%;
+    }
+    .homegrid a:nth-child(5) h6{
+        padding-top: 10%;
+    }
+
+}
+/*Carousel from medium.com*/
+.carousel {
+    overflow: hidden;
+}
+.carou{
+    height: 100%;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+.carousel-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    height: 50vh;
+    padding-top: 7%;
+}
+.carousel-item img {
+    width: 60%;
+}
+.indicators{
+    display: flex;
+    justify-content: center;
+}
+.indicators button {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: none;   
+}
+.indicators button:hover{
+    background-color: black;
+}
+@media only screen and (max-width:600px) {
+    .carousel-item img {
+        width: 100%;
+    }
+}
